@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    top: 0px;
+    margin: 0px;
+    
+}
+
+body{
+    background: #ad5389;  
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  
+    background: linear-gradient(to right, #3c1053, #ad5389); 
+}
+
+#contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 450px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 5px;
+    border: solid black 1px;
+    background-color: black;
+    
+}
+
+div form{
+    height: 100%;
+    width: 100%;
+    background: black;
+}
+
+#numeros{
+    height: 60px;
+    width: 340px;
+    cursor: default;
+    background-color: black;
+    color: white;
+    text-align: right;
+    font-size: 30px;
+    padding: 15px;
+    border: 1px white solid;
+    border-radius: 0.5px;
+    outline: none;
+    margin-bottom: 20px;
+    text-decoration: none;
+
+}
+
+div input{
+    width: 80px;
+    height: 70px;
+    margin-left: 5px;
+    margin-top: 8px;
+    border-radius: 100%;
+    background-color: #A54F86;
+    color: white;
+    font-size: 20px;
+}
+
+.estilo{
+    background-color: #3E1154;
+}
+
+.estilo_2{
+    background-color: white;
+    color: black;
+}
+
+
