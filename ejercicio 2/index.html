@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+
+    <style>
+		body {
+			background: #360033;  
+			background: -webkit-linear-gradient(to right, #0b8793, #360033); 
+			background: linear-gradient(to right, #0b8793, #360033); 
+		}
+
+		img {
+			width: 300px;
+			height: 300px;
+			border-radius: 50%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		button {
+			font-size: 15px;
+			padding: 10px;
+			background-color: #301542;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			position: absolute;
+			top: 80%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		button:hover {
+			background-color: #0C8591;
+		}
+	</style>
+
+    <body>
+        <img class="mi_imagen" src="img/img1.jpg" alt="1">
+        
+        <button onClick="cambiarImagen()">Siguiente</button>
+    </body>
+
+    <script>
+
+        let contador = 1
+        let maximo = 4
+
+        function cambiarImagen(){
+            let imagen = document.getElementsByClassName("mi_imagen")[0]
+            contador++
+            if(contador > maximo){
+                contador = 1
+            }
+
+            imagen.src = "img/img" + contador + ".jpg" 
+            imagen.alt = contador
+            
+        }
+
+    </script>
+</html>
